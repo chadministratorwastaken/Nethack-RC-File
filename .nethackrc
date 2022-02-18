@@ -1,0 +1,107 @@
+## Chad's nethack config 2.0
+
+## Junethack configuration line
+# junethack Irestine
+
+## Character name
+#
+OPTIONS=name:Irestine
+
+## Random characters
+#
+CHOOSE=char A, char B
+[char A]
+OPTIONS=role:valkyrie,race:human,align:lawful,gender:female
+[char B]
+OPTIONS=role:tourist,race:random,align:random,gender:random
+
+## Displays the exact number of experience points next to your experience level on the status line.
+#
+OPTIONS=showexp
+
+## Shows your approximate accumulated score on the bottom line.
+#
+OPTIONS=showscore
+
+## Displays elapsed game time, in turns, on the status line.
+#
+OPTIONS=time
+
+## NetHack should display color if it can for different monsters, objects, and dungeon features.
+#
+OPTIONS=color
+
+## Automatically pick up things onto which you move.
+#
+OPTIONS=autopickup
+
+## Specify the object types to be picked up when autopickup is on.
+#
+OPTIONS=pickup_types:$
+
+## Set the symbol used to display boulders.
+#
+OPTIONS=boulder:0
+
+## Use the number keys to move instead of [hjklyubn]. Valid options are:
+##  0 move by letters; 'yuhjklbn'
+##  1 move by numbers; digit 5 acts as G movement prefix
+##  2 like 1 but 5 works as g prefix instead of as G
+##  3 by numbers using phone key layout; 123 above, 789 below
+##  4 combines 3 with 2; phone layout plus MSDOS compatibility, where 5 means g, alt + 5 means G, and alt + 0 mean I
+## -1 by letters but use z to go northwest, y to zap wands (for German keyboards)
+#
+OPTIONS=number_pad:0
+
+## Number of message-window messages to save.
+#
+OPTIONS=msghistory:60
+
+## When walking across a pile of objects on the floor, threshold at which the message "there are few/several/many objects here" is given instead of showing a popup list of those objects.
+#
+OPTIONS=pile_limit:3
+
+## Enable coloring menu lines.
+#
+OPTIONS=menucolors
+MENUCOLOR=" blessed "=green
+MENUCOLOR=" holy "=green
+MENUCOLOR=" cursed "=red
+MENUCOLOR=" unholy "=red
+MENUCOLOR=" cursed .* (being worn)"=orange&underline
+
+## Controls how many turns status hilite behaviors highlight the field.
+#
+OPTIONS=statushilites
+
+## Allows you to customize your game display by setting thresholds to change the color or appearance of fields in the status bar.
+# HP
+OPTIONS=hitpointbar
+OPTIONS=hilite_status:hitpoints/100%/grey&normal
+OPTIONS=hilite_status:hitpoints/<100%/green&normal
+OPTIONS=hilite_status:hitpoints/<66%/yellow&normal
+OPTIONS=hilite_status:hitpoints/<50%/orange&normal
+OPTIONS=hilite_status:hitpoints/<33%/red&bold
+OPTIONS=hilite_status:hitpoints/<15%/red&inverse
+## Pw
+OPTIONS=hilite_status:power/100%/grey&normal
+OPTIONS=hilite_status:power/<100%/green&normal
+OPTIONS=hilite_status:power/<66%/yellow&normal
+OPTIONS=hilite_status:power/<50%/orange&normal
+OPTIONS=hilite_status:power/<33%/red&bold
+## Carry
+OPTIONS=hilite_status:cap/burdened/yellow/stressed/orange/strained/red&bold/overtaxed/red&inverse/overloaded/red&inverse&blink
+## Hunger
+OPTIONS=hilite_status:hunger/satiated/yellow/hungry/orange/weak/red&bold/fainting/red&inverse/fainted/red&inverse&blink
+## Mental
+OPTIONS=hilite_status:condition/hallu/yellow
+OPTIONS=hilite_status:condition/conf/orange
+OPTIONS=hilite_status:condition/stun/red&bold
+## Health
+OPTIONS=hilite_status:condition/termill/red&inverse
+OPTIONS=hilite_status:condition/foodpois/red&inverse
+OPTIONS=hilite_status:condition/slime/red&inverse
+# Str, Con, Dex, Int, Wis, Cha
+OPTIONS=hilite_status:characteristics/up/green/down/red
+# gold
+OPTIONS=hilite_status:gold/up/yellow/down/brown
