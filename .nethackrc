@@ -9,7 +9,7 @@ OPTIONS=name:Irestine
 
 ## Random characters
 #
-CHOOSE=char A, char B
+CHOOSE=char A,char B
 [char A]
 OPTIONS=role:valkyrie,race:human,align:lawful,gender:female
 [char B]
@@ -44,12 +44,12 @@ OPTIONS=pickup_types:$
 OPTIONS=boulder:0
 
 ## Use the number keys to move instead of [hjklyubn]. Valid options are:
-##  0 move by letters; 'yuhjklbn'
-##  1 move by numbers; digit 5 acts as G movement prefix
-##  2 like 1 but 5 works as g prefix instead of as G
-##  3 by numbers using phone key layout; 123 above, 789 below
-##  4 combines 3 with 2; phone layout plus MSDOS compatibility, where 5 means g, alt + 5 means G, and alt + 0 mean I
-## -1 by letters but use z to go northwest, y to zap wands (for German keyboards)
+#  0 move by letters; 'yuhjklbn'
+#  1 move by numbers; digit 5 acts as G movement prefix
+#  2 like 1 but 5 works as g prefix instead of as G
+#  3 by numbers using phone key layout; 123 above, 789 below
+#  4 combines 3 with 2; phone layout plus MSDOS compatibility, where 5 means g, alt + 5 means G, and alt + 0 mean I
+# -1 by letters but use z to go northwest, y to zap wands (for German keyboards)
 #
 OPTIONS=number_pad:0
 
