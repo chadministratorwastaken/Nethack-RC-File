@@ -1,4 +1,8 @@
-## Chad's nethack config 2.0
+## Chad's nethack config 2.0.1
+
+###############################
+# UNIVERSAL CHARACTER OPTIONS #
+###############################
 
 ## Junethack configuration line
 # junethack Irestine
@@ -6,14 +10,6 @@
 ## Character name
 #
 OPTIONS=name:Irestine
-
-## Random characters
-#
-CHOOSE=char A,char B
-[char A]
-OPTIONS=role:valkyrie,race:human,align:lawful,gender:female
-[char B]
-OPTIONS=role:tourist,race:random,align:random,gender:random
 
 ## Displays the exact number of experience points next to your experience level on the status line.
 #
@@ -105,3 +101,21 @@ OPTIONS=hilite_status:condition/slime/red&inverse
 OPTIONS=hilite_status:characteristics/up/green/down/red
 # gold
 OPTIONS=hilite_status:gold/up/yellow/down/brown
+
+##############################
+# CHARACTER-SPECIFIC OPTIONS #
+##############################
+
+## Random characters
+#
+CHOOSE=char A,char B
+[char A]
+OPTIONS=role:valkyrie
+OPTIONS=race:human
+OPTIONS=align:lawful
+OPTIONS=gender:female
+[char B]
+OPTIONS=role:tourist
+OPTIONS=race:random
+OPTIONS=align:random
+OPTIONS=gender:random
