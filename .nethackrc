@@ -1,4 +1,4 @@
-## Chad's nethack config 2.0.1
+## Chad's nethack config 2.0.2
 
 ###############################
 # UNIVERSAL CHARACTER OPTIONS #
@@ -60,11 +60,11 @@ OPTIONS=pile_limit:3
 ## Enable coloring menu lines.
 #
 OPTIONS=menucolors
-MENUCOLOR=" blessed "=green
-MENUCOLOR=" holy "=green
-MENUCOLOR=" cursed "=red
-MENUCOLOR=" unholy "=red
-MENUCOLOR=" cursed .* (being worn)"=orange&underline
+MENUCOLOR=blessed=green
+MENUCOLOR=holy=green
+MENUCOLOR=[ ]+cursed=red
+MENUCOLOR=unholy=red
+MENUCOLOR=[ ]+cursed.*(being worn)=orange&underline
 
 ## Controls how many turns status hilite behaviors highlight the field.
 #
